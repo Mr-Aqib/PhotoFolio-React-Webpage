@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+:root {
+  --primary-color: #969696;
+}
+
+.nav-ul-items {
+  color: var(--primary-color);
+}
