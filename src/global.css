@@ -24,12 +24,14 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20%);
+  z-index: 11;
 }
 .header-nested-ul-items:hover {
   color: white !important;
 }
 .header-nested-ul-items {
   transition: all 0.5s;
+  z-index: 11;
 }
 .header-deep-nested-ul {
   background-color: rgb(81, 73, 73);
@@ -37,6 +39,7 @@ body {
   transition: all 0.7s;
   opacity: 0;
   visibility: hidden;
+  z-index: 11;
 }
 .header-nested-ul li:nth-child(7):hover .header-deep-nested-ul {
   opacity: 1;
@@ -45,16 +48,46 @@ body {
 }
 /* Main Home Page */
 main {
-  height: 80vh;
+  height: 50vh;
 }
+
 /*Media Query */
 @media only screen and (max-width: 768px) {
-  .header-ul {
-    width: 100vh;
+  /* .header-ul {
+    width: 100%;
     height: 40vh;
+
     align-items: start !important;
-    margin-left: 30px !important;
+    margin-left: -20px !important;
     flex-direction: column !important;
     justify-content: space-around !important;
+    top: 20% !important;
+    background-color: rgb(32, 30, 30) !important;
+    position: absolute;
+    padding-left: 20px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  .parent {
+    position: absolute;
+    top: 0%;
+    height: 50vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+  main {
+    margin-top: 420px;
+    overflow-y: hidden;
+  }
+  .icons {
+    z-index: 1;
+  }
+  .header-nested-ul li:nth-child(7):hover .header-deep-nested-ul {
+    transform: translate(104%, -53%);
+  }
+} */
+  main {
+    height: 50vh;
   }
 }
