@@ -9,4 +9,18 @@ body {
 
 .nav-ul-items {
   color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-nested-ul {
+  background-color: rgb(81, 73, 73);
+  top: 40px;
+  transition: all 0.3s;
+}
+.header-nested-ul-items:hover {
+  color: white !important;
+}
+.header-nested-ul li {
+  transition: all 0.3s;
 }

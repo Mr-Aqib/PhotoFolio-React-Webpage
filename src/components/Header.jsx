@@ -1,19 +1,24 @@
 import React from 'react'
 import { BiCamera, BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoMeta, BiLogoTwitter, BiLogoXing } from "react-icons/bi";
+import HeaderNedtedul from './HeaderNedtedul';
 const Header = () => {
   return (
       <>
-          <div className="row px-3">
+          <div className="row px-3 py-2">
               <div className="col-lg-4 logo gap-1 d-flex align-items-center 
                py-2
               ">
                   <BiCamera color='#27A776' size={30} />
                   <h2 className='display-6'>PhotoFolio</h2>
               </div>
-              <ul className="col-lg-4 d-flex list-unstyled align-items-center justify-content-around m-0 fw-medium flex-row nav-ul">
+              <ul className="col-lg-4 d-flex list-unstyled align-items-center gap-4 justify-content-around m-0 fw-medium flex-row nav-ul">
                   <li className='nav-ul-items'>Home</li>
                   <li className='nav-ul-items'>About</li>
-                  <li className='nav-ul-items'>Gallery</li>
+                  <li className='nav-ul-items position-relative'>Gallery
+                      
+                      <HeaderNedtedul/>
+
+                  </li>
                   <li className='nav-ul-items'>Services</li>
                   <li className='nav-ul-items'>Contact</li>
               </ul>
