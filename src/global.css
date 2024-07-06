@@ -77,6 +77,22 @@ main {
 .typing-animation {
   font-family: "Delius Swash Caps", cursive !important;
 }
+
+.header-front h1 span::before {
+  content: "";
+  background-color: #1f9266;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  z-index: -1;
+}
+.header-front h1 span {
+  z-index: 0;
+  position: relative;
+}
+/* Home - pictures */
+
 /*Media Query */
 @media only screen and (max-width: 768px) {
   main {

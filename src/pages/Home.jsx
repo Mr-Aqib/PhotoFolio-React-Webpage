@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import { TypeAnimation } from 'react-type-animation'
 import Homefront from '../components/Homefront'
+import HomePictures from '../components/HomePictures'
 const Home = () => {
   return (
       <>
@@ -26,7 +27,7 @@ const Home = () => {
       repeat={Infinity}
     />
       </main>
-      
+      <HomePictures/>
       </>
   )
 }
