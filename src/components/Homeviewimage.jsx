@@ -19,17 +19,20 @@ const Homeviewimage = ({setShowImage,showurl,showid}) => {
                       right: '40'
                       
              }}     color='white' />
-        <div>
+       
         <img style={{
-          width: '90%',
-          height: '100%',
+          width: '80%',
+          height: '80%',
           objectFit: 'cover',
           borderRadius: '20px',
           border: '3px solid white',
           boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)'
         }} src={showurl} alt="" className='d-block mx-auto' />
+        
+          <h1 className='bg-dark mx-auto text-white rounded-5 w-75 text-center rounded-3'>{showid}</h1>
+        
         </div>
-        </div>
+      
 
     </>
     
