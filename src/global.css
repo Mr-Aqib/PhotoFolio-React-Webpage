@@ -129,7 +129,10 @@ main {
   transform: translateY(0px) !important;
 }
 
-/* Home - pictures */
+/* Home-viewimahge */
+.h-vewimg {
+  background-color: rgba(82, 81, 81, 0.4) !important;
+}
 
 /*Media Query */
 @media only screen and (max-width: 768px) {
