@@ -5,14 +5,14 @@ import HomeSingleimage from './HomeSingleimage'
 const HomePictures = () => {
   return (
       <>
-          <div className="p-3 row">
+          <div className="mainhomeimg   container-fluid px-4 row">
               {
                   homepDV?.map((items, index) =>
                   {
-                      return <HomeSingleimage key={index} {...items} />
+                     return  <HomeSingleimage key={index} {...items} />
   
-                })
-             }
+                 })
+             } 
           </div>
       </>
   )

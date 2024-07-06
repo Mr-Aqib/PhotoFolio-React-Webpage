@@ -88,9 +88,47 @@ main {
   z-index: -1;
 }
 .header-front h1 span {
-  z-index: 0;
   position: relative;
 }
+.header-front h1 {
+  z-index: -22 !important;
+}
+.hp-child {
+  background-color: rgba(63, 59, 59, 0.5);
+  width: 100% !important;
+  height: 100% !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.2ss;
+  overflow: hidden !important;
+}
+.hp-parent:hover .hp-child {
+  z-index: 11;
+  opacity: 1;
+}
+.hp-child {
+  transition: all 0.4s;
+}
+
+.hp-img {
+  transition: all 0.5s;
+}
+.hp-parent:hover .hp-img {
+  scale: 1.1;
+}
+.hp-parent {
+  overflow: hidden !important;
+}
+.hp-child-icons {
+  transform: translateY(120px) !important;
+  transition: all 0.3s;
+}
+.hp-parent:hover .hp-child-icons {
+  transform: translateY(0px) !important;
+}
+
 /* Home - pictures */
 
 /*Media Query */
