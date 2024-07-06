@@ -1,3 +1,9 @@
+.delius-swash-caps-regular {
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   background-color: black;
   overflow-x: hidden;
@@ -55,7 +61,21 @@ main {
 }
 /* Header Front */
 .header-front {
-  height: 40vh;
+  height: 50vh;
+}
+.homecompnent-btn {
+  background-color: #27a776;
+  transition: all 0.2s;
+}
+.homecompnent-btn:hover {
+  background-color: #1f9266;
+}
+.header-front h1 {
+  font-family: cardinal;
+  font-size: 2.7rem;
+}
+.typing-animation {
+  font-family: "Delius Swash Caps", cursive !important;
 }
 /*Media Query */
 @media only screen and (max-width: 768px) {
@@ -102,11 +122,15 @@ main {
     display: block;
   }
   .header-front h1 {
-    font-size: 20px;
+    font-size: 1.8em;
     width: 100% !important;
   }
   .header-front p {
     font-size: 15px;
     width: 75% !important;
+  }
+  .homecompnent-btn {
+    font-size: 14px;
+    padding: 6px 15px 6px 15px !important;
   }
 }

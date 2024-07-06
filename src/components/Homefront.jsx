@@ -1,4 +1,5 @@
 import React from 'react'
+import HomeFrontBtn from './HomeFrontBtn'
 
 const Homefront = () => {
   return (
@@ -8,6 +9,9 @@ const Homefront = () => {
                   I'm Jenny Wilson a Professional Photographer from New York City
               </h1>
               <p className='text-center w-50 mx-auto text-secondary'>Blanditiis praesentium aliquam illum tempore incidunt debitis dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
+             
+                  <HomeFrontBtn content={"AVAILABLE FOR HIRE"} />
+                  
       </div>
       </>
   )

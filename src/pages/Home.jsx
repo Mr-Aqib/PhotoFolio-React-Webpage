@@ -7,7 +7,7 @@ const Home = () => {
       <>
       <Header />
       <Homefront />
-      <main className=' text-center container d-flex  text-white justify-content-center'>
+      <main className='typing-animation text-center container d-flex  text-white justify-content-center'>
         <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
