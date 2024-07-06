@@ -5,7 +5,7 @@ import HomeSingleimage from './HomeSingleimage'
 const HomePictures = () => {
   return (
       <>
-          <div className="mainhomeimg   container-fluid px-4 row">
+          <div className="mainhomeimg mx-auto container-fluid  row">
               {
                   homepDV?.map((items, index) =>
                   {
