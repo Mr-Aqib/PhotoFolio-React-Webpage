@@ -29,7 +29,7 @@ const Homeviewimage = ({setShowImage,showurl,showid}) => {
           boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)'
         }} src={showurl} alt="" className='d-block mx-auto' />
         
-          <h1 className='bg-dark mx-auto text-white rounded-5 w-75 text-center rounded-3'>{showid}</h1>
+          <h1 className='fs-2 fw-normal py-2  bg-dark mx-auto text-white rounded-5 w-75 text-center rounded-3'>Gallery: {showid}</h1>
         
         </div>
       
