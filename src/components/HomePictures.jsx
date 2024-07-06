@@ -5,11 +5,19 @@ import HomeSingleimage from './HomeSingleimage'
 import Homeviewimage from './Homeviewimage'
 
 const HomePictures = () => {
-const [showimage,setShowImage] =useState(false)
+    const [showimage, setShowImage] = useState(false)
+    const [showurl,setshowurl]=useState("")
+    const [showid,setshowid]=useState()
+    const idfet = (urlimg,id) =>
+    {
+        setShowImage(true)
+setshowid (id)
+        setshowurl(urlimg)
+    }
   return (
       <>
           {
-              showimage &&<Homeviewimage setShowImage={setShowImage}   />
+              showimage &&<Homeviewimage showid={showid} showurl={showurl} setShowImage={setShowImage}   />
           }
                
           <div className="mainhomeimg mx-auto container-fluid  row">
@@ -17,7 +25,7 @@ const [showimage,setShowImage] =useState(false)
                   homepDV?.map((items, index) =>
                   {
                       return <HomeSingleimage
-                          setShowImage={setShowImage}
+                         idfet={idfet}
                      
                           key={index} {...items} />
                      
