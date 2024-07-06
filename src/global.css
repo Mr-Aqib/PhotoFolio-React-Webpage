@@ -48,15 +48,19 @@ body {
 }
 /* Main Home Page */
 main {
-  height: 50vh;
+  height: 20vh;
 }
 .menu-btn {
   display: none;
 }
+/* Header Front */
+.header-front {
+  height: 40vh;
+}
 /*Media Query */
 @media only screen and (max-width: 768px) {
   main {
-    height: 50vh;
+    height: 10vh;
     font-size: 10px;
   }
 
@@ -96,5 +100,13 @@ main {
   }
   .menu-btn {
     display: block;
+  }
+  .header-front h1 {
+    font-size: 20px;
+    width: 100% !important;
+  }
+  .header-front p {
+    font-size: 15px;
+    width: 75% !important;
   }
 }

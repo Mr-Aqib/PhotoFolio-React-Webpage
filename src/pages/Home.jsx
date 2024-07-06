@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
 import { TypeAnimation } from 'react-type-animation'
+import Homefront from '../components/Homefront'
 const Home = () => {
   return (
       <>
       <Header />
-      <main className='text-center container d-flex align-items-center text-white justify-content-center'>
+      <Homefront />
+      <main className=' text-center container d-flex  text-white justify-content-center'>
         <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
@@ -23,7 +25,8 @@ const Home = () => {
       style={{ fontSize: '2em', display: 'inline-block' }}
       repeat={Infinity}
     />
-    </main>
+      </main>
+      
       </>
   )
 }
