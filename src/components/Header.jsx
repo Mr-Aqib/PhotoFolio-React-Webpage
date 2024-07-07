@@ -3,6 +3,7 @@ import { BiCamera, BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoMeta, 
 import HeaderNedtedul from './HeaderNedtedul';
 import { IoMdClose } from "react-icons/io";
 import { IoIosArrowDropdown,IoIosMenu } from "react-icons/io";
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const menuref = useRef()
@@ -18,7 +19,9 @@ const Header = () => {
 
         setBtns(false)
     }
-
+    // Path Hook
+    const path = useLocation()
+    console.log(path)
 
   return (
       <>
@@ -32,9 +35,15 @@ const Header = () => {
               <div className="parent col-lg-4  align-items-center justify-content-around m-0 my-4">
                   <div className="parent-header-ul">
               <ul ref={menuref} className=" d-flex list-unstyled m-0 align-items-center gap-4 justify-content-around fw-medium flex-row header-ul">
-                  <li className='head-ul-li'>Home</li>
-                  <li className='head-ul-li'>About</li>
-                  <li className='head-ul-li position-relative'>
+                          <Link to='/home'
+                              style={{
+                                  textDecoration:"none"
+                          }}    className={`${path.pathname == "/home" && 'text-danger'} `
+                          }>Home</Link>
+                  <Link style={{
+                                  textDecoration:"none"
+                          }}    to='/about' className={`${path.pathname=='/about' && 'text-danger'} `}>About</Link>
+                  <li className=' position-relative'>
                       <div className="d-flex align-items-center gap-1">
                       Gallery
                           <IoIosArrowDropdown className='header-arrow-icon' size={15} />
@@ -43,8 +52,8 @@ const Header = () => {
                       <HeaderNedtedul/>
 
                   </li>
-                  <li className='head-ul-li'>Services</li>
-                  <li className='head-ul-li'>Contact</li>
+                  <li className=''>Services</li>
+                  <li className=''>Contact</li>
                   </ul>
               
                   </div>

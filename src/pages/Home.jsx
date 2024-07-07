@@ -6,7 +6,6 @@ import HomePictures from '../components/HomePictures'
 const Home = () => {
   return (
       <>
-      <Header />
       <Homefront />
       <main className='typing-animation text-center container d-flex  text-white justify-content-center'>
         <TypeAnimation
