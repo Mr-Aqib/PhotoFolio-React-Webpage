@@ -5,7 +5,7 @@ import { RiReactjsLine } from 'react-icons/ri'
 const Footer = () => {
   return (
       <>
-          <footer className=" footerholder align-items-center justify-content-center gap-2 d-flex flex-column"
+          <footer className=" footerholder p-4 align-items-center justify-content-center gap-2 d-flex flex-column"
                   style={{
                   height:"30VH"
               }}>
