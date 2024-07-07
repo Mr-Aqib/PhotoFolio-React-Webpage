@@ -21,8 +21,8 @@ const Homeviewimage = ({setShowImage,showurl,showid}) => {
              }}     color='white' />
        
         <img style={{
-          width: '100%',
-          
+          width: '80%',
+          height:"80%",
           objectFit: 'cover',
           transition: 'transform 0.5s ease',
           borderRadius: '20px',
