@@ -28,7 +28,7 @@ const Footer = () => {
                           </div>
                   </div>
                   <div>
-                  <p className='text-white m-0 p-0'>Developed in REACT JS <RiReactjsLine color='gray' size={30} /> by <a className='fs-5 m-0 p-0' style={{
+                  <p className='text-white text-center m-0 p-0'>Developed in REACT JS <RiReactjsLine color='gray' size={30} /> by <a className='fs-5 m-0 p-0' style={{
                       textDecoration: "none",
                       color:"#1F9266"
                       }} href="https://aqib-portfolio-eta.vercel.app">Muhammad Aqib</a></p>
